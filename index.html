@@ -5,10 +5,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;700&display=swap">
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -30,51 +30,51 @@
                 <h1 class="baseline_title">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="baseline_subtitle">En plein centre ville ou en pleine nature</p>
             </div>
-            <div class="formulaire">
-                <form method="get" action="ville.php">
+            <div class="rechercher">
+                <form method="get" action="ville.php" class="formulaire">
                         <button class="formulaire-button">
                             <i class="fas fa-map-marker-alt"></i>
                         </button>
-                        <input type="text" name="ville" placeholder="Marseille, France" />
+                        <input type="text" name="ville" placeholder="Marseille, France" class="formulaire-ville"/>
                         <input type="submit" value="Rechercher" class="formulaire-rechercher"/>
                 </form>
             </div>
             <div class=filtres>
                 <h2 class="filtres-title">Filtres</h2>
-                    <ul class="filtres-list">
-                        <li class="filtres-list-panel">
-                            <button class="filtres-list-panel-button">
-                                <div class="filtres-list-panel-button__blue">
-                                    <i class="fas fa-money-bill-wave"></i>
-                                </div>
-                                <p class="filtres-list-panel-button__text">Économique</p>
-                            </button>
-                        </li>
-                        <li class="filtres-list-panel">
-                            <button class="filtres-list-panel-button">
-                                <div class="filtres-list-panel-button__blue">
-                                    <i class="fas fa-money-bill-wave"></i>
-                                </div>
-                                <p class="filtres-list-panel-button__text">Familial</p>
-                            </button>
-                        </li>
-                        <li class="filtres-list-panel">
-                            <button class="filtres-list-panel-button">
-                                <div class="filtres-list-panel-button__blue">
-                                    <i class="fas fa-money-bill-wave"></i>
-                                </div>
-                                <p class="filtres-list-panel-button__text">Romantique</p>
-                            </button>
-                        </li>
-                        <li class="filtres-list-panel">
-                            <button class="filtres-list-panel-button">
-                                <div class="filtres-list-panel-button__blue">
-                                    <i class="fas fa-money-bill-wave"></i>
-                                </div>
-                                <p class="filtres-list-panel-button__text">Animaux autorisés</p>
-                            </button>
-                        </li>
-                    </ul>
+                <ul class="filtres-list">
+                    <li class="filtres-list-panel">
+                        <button class="filtres-list-panel-button">
+                            <div class="filtres-list-panel-button__blue">
+                                <i class="fas fa-money-bill-wave"></i>
+                            </div>
+                            <p class="filtres-list-panel-button__text">Économique</p>
+                        </button>
+                    </li>
+                    <li class="filtres-list-panel">
+                        <button class="filtres-list-panel-button">
+                            <div class="filtres-list-panel-button__blue">
+                                <i class="fas fa-child"></i>
+                            </div>
+                            <p class="filtres-list-panel-button__text">Familial</p>
+                        </button>
+                    </li>
+                    <li class="filtres-list-panel">
+                        <button class="filtres-list-panel-button">
+                            <div class="filtres-list-panel-button__blue">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <p class="filtres-list-panel-button__text">Romantique</p>
+                        </button>
+                    </li>
+                    <li class="filtres-list-panel">
+                        <button class="filtres-list-panel-button">
+                            <div class="filtres-list-panel-button__blue">
+                                <i class="fas fa-dog"></i>
+                            </div>
+                            <p class="filtres-list-panel-button__text">Animaux autorisés</p>
+                        </button>
+                    </li>
+                </ul>
             </div>
             <section class="info">
                 <div class="info-ring">
@@ -94,12 +94,12 @@
                                 <div class="heb-panelswhite-card-description">
                                     <h3 class="heb-panelswhite-card-description__title">Auberge La Cannebière</h3>
                                     <p class="heb-panelswhite-card-description__subtitle">Nuit à partir de <strong>25€</strong></p>
-                                    <div class="heb-panelswhite-card-description__4star">
+                                    <div class="heb-panelswhite-card-description__star">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-grey"></i>
                                     </div>
                                 </div>
                             </a>
@@ -112,7 +112,7 @@
                                 <div class="heb-panelswhite-card-description">
                                     <h3 class="heb-panelswhite-card-description__title">Hôtel du Port</h3>
                                     <p class="heb-panelswhite-card-description__subtitle">Nuit à partir de <strong>52€</strong></p>
-                                    <div class="heb-panelswhite-card-description__5star">
+                                    <div class="heb-panelswhite-card-description__star">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -130,12 +130,12 @@
                                 <div class="heb-panelswhite-card-description">
                                     <h3 class="heb-panelswhite-card-description__title">Hôtel Les mouettes</h3>
                                     <p class="heb-panelswhite-card-description__subtitle">Nuit à partir de <strong>76€</strong></p>
-                                    <div class="heb-panelswhite-card-description__5star">
+                                    <div class="heb-panelswhite-card-description__star">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-grey"></i>
                                     </div>
                                 </div>
                             </a>
@@ -148,12 +148,12 @@
                                 <div class="heb-panelswhite-card-description">
                                     <h3 class="heb-panelswhite-card-description__title">Hôtel de la mer</h3>
                                     <p class="heb-panelswhite-card-description__subtitle">Nuit à partir de <strong>46€</strong></p>
-                                    <div class="heb-panelswhite-card-description__3star">
+                                    <div class="heb-panelswhite-card-description__star">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-grey"></i>
+                                        <i class="fas fa-star star-grey"></i>
                                     </div>
                                 </div>
                             </a>
@@ -166,12 +166,12 @@
                                 <div class="heb-panelswhite-card-description">
                                     <h3 class="heb-panelswhite-card-description__title">Auberge Le Panier</h3>
                                     <p class="heb-panelswhite-card-description__subtitle">Nuit à partir de <strong>23€</strong></p>
-                                    <div class="heb-panelswhite-card-description__4star">
+                                    <div class="heb-panelswhite-card-description__star">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star star-grey"></i>
                                     </div>
                                 </div>
                             </a>
@@ -184,7 +184,7 @@
                                 <div class="heb-panelswhite-card-description">
                                     <h3 class="heb-panelswhite-card-description__title">Hôtel chez Amina</h3>
                                     <p class="heb-panelswhite-card-description__subtitle">Nuit à partir de <strong>96€</strong></p>
-                                    <div class="heb-panelswhite-card-description__5star">
+                                    <div class="heb-panelswhite-card-description__star">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -206,7 +206,7 @@
                         <article class="pop-panelswhite-card">
                             <a href="#" class="pop-panelswhite-card__link">
                                 <div class="pop-panelswhite-card-picture">
-                                    <img src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="pop-panelswhite-card-picture__img"/>
+                                    <img src="img/hebergements/4_small/.emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="pop-panelswhite-card-picture__img"/>
                                 </div>
                                 <div class="pop-panelswhite-card-description">
                                     <h3 class="pop-panelswhite-card-description__title">Hôtel Le soleil du matin</h3>
@@ -224,7 +224,7 @@
                         <article class="pop-panelswhite-card">
                             <a href="#" class="pop-panelswhite-card__link">
                                 <div class="pop-panelswhite-card-picture">
-                                    <img src="img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="pop-panelswhite-card-picture__img"/>
+                                    <img src="img/hebergements/4_small/.aw-creative-VGs8z60yT2c-unsplash.jpg" class="pop-panelswhite-card-picture__img"/>
                                 </div>
                                 <div class="pop-panelswhite-card-description">
                                     <h3 class="pop-panelswhite-card-description__title">Au coeur de l'eau Chambres d'hôtes</h3>
@@ -242,7 +242,7 @@
                         <article class="pop-panelswhite-card">
                             <a href="#" class="pop-panelswhite-card__link">
                                 <div class="pop-panelswhite-card-picture">
-                                    <img src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="pop-panelswhite-card-picture__img"/>
+                                    <img src="img/hebergements/4_small/.febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="pop-panelswhite-card-picture__img"/>
                                 </div>
                                 <div class="pop-panelswhite-card-description">
                                     <h3 class="pop-panelswhite-card-description__title">Hôtel Tout bleau et Blanc</h3>

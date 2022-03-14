@@ -1,0 +1,248 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 80px;
+}
+.header-nav-list {
+  display: flex;
+}
+.header-nav-list-page__link {
+  font-size: 12px;
+  display: block;
+  padding: 40px;
+  border-top: 2px solid #FFF;
+}
+.header-nav-list-page__link:hover {
+  border-top: 2px solid #0065FC;
+  color: #0065FC;
+  transition-duration: 0.5s;
+}
+
+.baseline_title {
+  font-size: 17px;
+}
+.baseline_subtitle {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.formulaire {
+  display: flex;
+  padding: 10px 0;
+}
+.formulaire-button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: #F2F2F2;
+  border-radius: 10px 0 0 10px;
+  padding: 0;
+}
+.formulaire-ville {
+  height: 40px;
+  border: none;
+  border: 1px solid #F2F2F2;
+}
+.formulaire-ville[type=text] {
+  font-size: 12px;
+  padding: 10px;
+  font-weight: 600;
+}
+.formulaire-rechercher {
+  font-size: 12px;
+  border: none;
+  background-color: #0065FC;
+  color: white;
+  font-weight: 600;
+  border-radius: 0 10px 10px 0;
+  padding: 10px;
+}
+.formulaire-rechercher:hover {
+  background-color: #DEEBFF;
+  color: #0065FC;
+  transition-duration: 0.25s;
+}
+
+.fa-money-bil-wave {
+  font-size: 15px;
+}
+
+.filtres {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 15px 0;
+}
+.filtres-title {
+  font-size: 15px;
+}
+.filtres-list {
+  display: flex;
+}
+.filtres-list-panel {
+  margin-left: 20px;
+}
+.filtres-list-panel-button {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: none;
+  border-radius: 30px;
+  background-color: white;
+  padding: 0;
+}
+.filtres-list-panel-button__blue {
+  position: absolute;
+  z-index: 10;
+  border-radius: 30px;
+  color: blue;
+  text-align: center;
+  height: 42px;
+  width: 42px;
+  background-color: #DEEBFF;
+}
+.filtres-list-panel-button__text {
+  padding: 10px 12px 10px 50px;
+  border: 2px solid #F2F2F2;
+  border-radius: 30px;
+  font-size: 15px;
+  margin: 0;
+  font-weight: 600;
+}
+.filtres-list-panel-button:hover {
+  background-color: #DEEBFF;
+  color: #0065FC;
+}
+.filtres-list-panel-button:hover .filtres-list-panel-button__text {
+  border: 2px solid #DEEBFF;
+}
+.filtres-list-panel-button:hover .filtres-list-panel-button__blue {
+  background-color: #0065FC;
+  color: white;
+  transition-duration: 0.25s;
+}
+
+.fa-money-bill-wave, .fa-dog, .fa-heart, .fa-child {
+  padding-top: 12px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.info-ring {
+  text-align: center;
+  border: 2px solid #F2F2F2;
+  height: 25px;
+  width: 25px;
+  color: #0065FC;
+  border-radius: 30px;
+}
+.info-sentence {
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.fa-info {
+  font-size: 10px;
+}
+
+.panelsgrey {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hebergement {
+  padding: 30px;
+  flex-basis: calc(66% - 10px);
+  background-color: #F2F2F2;
+  border-radius: 20px;
+}
+.hebergement-title {
+  font-size: 17px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.hebergement-more__text {
+  font-size: 15px;
+}
+
+.hebergement-panelswhite {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.heb-panelswhite-card {
+  flex-basis: 30%;
+  height: 140px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px #e0e0e0;
+  padding: 4px;
+}
+.heb-panelswhite-card-picture {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  height: 63%;
+}
+.heb-panelswhite-card-picture__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.heb-panelswhite-card-description__title, .heb-panelswhite-card-description__subtitle {
+  font-size: 10px;
+  margin: 0;
+  padding: 5px 0 0 8px;
+}
+.heb-panelswhite-card-description__star {
+  color: #0065FC;
+  padding: 4px 0 0 8px;
+  font-size: 9px;
+}
+
+.star-grey {
+  color: #F2F2F2;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  width: 992px;
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* a {
+  text-decoration: none;
+  color: black;
+}
+
+* ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+* button, * input {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

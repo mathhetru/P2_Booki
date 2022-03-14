@@ -1,0 +1,216 @@
+// PARTIE HEADER 
+
+#header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.header{
+    &-logo{
+    width:80px;
+    }
+    &-nav-list{
+        display:flex;
+        &-page__link{
+            font-size:$normal;
+            display: block;
+            padding:40px;
+            border-top: 2px solid #FFF; 
+            &:hover{
+                border-top: 2px solid #0065FC;
+                color: #0065FC;
+                transition-duration: .5s;
+            }
+        }
+    }
+}
+
+// PARTIE RECHERCHE D'ETABLISSEMENTS
+.baseline{
+    &_title{
+        font-size: $titre;
+    }
+    &_subtitle{
+        font-size: $normal;
+        margin:10px 0;
+    }
+}
+.formulaire{
+    display:flex;
+    padding: 10px 0;
+    &-button{
+        height: 40px;
+        width:40px;
+        border:none;
+        background-color: $grey;
+        border-radius:10px 0 0 10px;
+        padding:0;
+    }
+    &-ville{
+        height:40px;
+        border:none;
+        border: 1px solid $grey; 
+        &[type=text]{
+            font-size: $normal;
+            padding: 10px;
+            font-weight: 600;
+        }
+    }
+    &-rechercher{
+        font-size: $normal;
+        border: none;
+        background-color: $blue;
+        color:white;
+        font-weight: 600;
+        border-radius:0 10px 10px 0;
+        padding: 10px;
+        &:hover{
+            background-color: $clearblue;
+            color:$blue;
+            transition-duration: .25s;
+        }
+    }
+}
+.fa-money-bil-wave{
+    font-size: 15px;
+}
+
+//PARTIE FILTRES
+.filtres{
+    display:flex;
+    justify-content:start;
+    align-items:center;
+    padding:15px 0;
+    &-title{
+        font-size: $gras
+    }
+    &-list{
+        display: flex;
+        &-panel{
+            margin-left:20px;
+        }
+    }
+    &-list-panel-button{
+        display:flex;
+        justify-content:start;
+        align-items:center;
+        border: none;
+        border-radius: 30px;
+        background-color: white;
+        padding: 0;
+        &__blue{
+            position: absolute;
+            z-index: 10;
+            border-radius: 30px;
+            color:blue;
+            text-align: center;
+            height:42px;
+            width:42px;
+            background-color: $clearblue;
+        }
+        &__text{
+            padding:10px 12px 10px 50px;
+            border: 2px solid $grey;
+            border-radius: 30px;
+            font-size: $gras;
+            margin:0;
+            font-weight: 600;
+        }
+        &:hover{
+            background-color: $clearblue;
+            color: $blue;
+            .filtres-list-panel-button__text{
+                border: 2px solid $clearblue;
+            }
+            .filtres-list-panel-button__blue{
+                background-color: $blue;
+                color:white;
+                transition-duration: .25s;
+            }
+        }
+    }
+}
+.fa-money-bill-wave, .fa-dog, .fa-heart, .fa-child{
+    padding-top: 12px;
+}
+
+//POINT INFO
+.info{
+    display: flex;
+    align-items:center;
+    margin-bottom: 20px;
+    &-ring{
+        text-align: center;
+        border: 2px solid $grey;
+        height:25px;
+        width:25px;
+        color:$blue;
+        border-radius: 30px;
+    }
+    &-sentence{
+        font-size: $normal;
+        padding-left: 10px;
+    }
+}
+.fa-info{
+    font-size: 10px;
+}
+
+//Hebergements 
+.panelsgrey{
+    display: flex;
+    justify-content: space-between;
+}
+.hebergement{
+    padding:30px;
+    flex-basis:calc(66% - 10px);
+    background-color: $grey;
+    border-radius: 20px;
+    &-title{
+        font-size: $titre;
+        margin:0;
+        padding-bottom: 20px;
+    }
+    &-more__text{
+        font-size: $gras;
+    }
+}
+.hebergement-panelswhite{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.heb-panelswhite-card{
+    flex-basis:30%;
+    height: 140px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgb(224, 224, 224);
+    padding: 4px;
+    &-picture{
+        border-radius: 10px 10px 0 0;
+        overflow: hidden;
+        height: 63%;
+        &__img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &-description{
+        &__title, &__subtitle{
+            font-size: 10px;
+            margin:0;
+            padding: 5px 0 0 8px;
+        }
+        &__star{
+            color:$blue;
+            padding: 4px 0 0 8px;
+            font-size: 9px;
+        }
+    }
+}
+.star-grey{
+    color:$grey;
+}
