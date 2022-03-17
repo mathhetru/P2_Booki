@@ -1,14 +1,14 @@
 @import "./base/color";
 @import "./utils/variables";
 @import "./utils/mixins";
-@import "./components/btn";
 @import "./layout/index";
 
 // Eléments principaux de la page
+
 body{
     font-family: 'Raleway', sans-serif;
     color: black;
-    width: 992px;
+    max-width: 100%;
     margin: auto;
 }
 *{
@@ -27,10 +27,12 @@ body{
     cursor: pointer;
     text-decoration: none;
 }
-
-
-@media screen and (max-width: 768px) {
-    body{
-        width: 100%;
-    }
+#header, #main{
+    max-width: 992px;
+    margin:auto;
 }
+#footer{
+    background-color: $grey;
+}
+
+

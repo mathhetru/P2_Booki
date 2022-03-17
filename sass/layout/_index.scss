@@ -1,5 +1,4 @@
 // PARTIE HEADER 
-
 #header{
     display:flex;
     justify-content:space-between;
@@ -41,7 +40,7 @@
     &-button{
         height: 40px;
         width:40px;
-        border:none;
+        border:none; 
         background-color: $grey;
         border-radius:10px 0 0 10px;
         padding:0;
@@ -69,6 +68,9 @@
             color:$blue;
             transition-duration: .25s;
         }
+    }
+    &-loupe{
+        display: none;
     }
 }
 .fa-money-bil-wave{
@@ -146,24 +148,25 @@
         width:25px;
         color:$blue;
         border-radius: 30px;
+        margin-right: 10px;
     }
     &-sentence{
+        padding: 0;
         font-size: $normal;
-        padding-left: 10px;
     }
 }
 .fa-info{
     font-size: 10px;
 }
 
-//Hebergements 
+//HEBERGEMENTS
 .panelsgrey{
     display: flex;
     justify-content: space-between;
 }
 .hebergement{
     padding:30px;
-    flex-basis:calc(66% - 10px);
+    flex-basis:66%;
     background-color: $grey;
     border-radius: 20px;
     &-title{
@@ -173,6 +176,7 @@
     }
     &-more__text{
         font-size: $gras;
+        margin:10px 0 0 0;
     }
 }
 .hebergement-panelswhite{
@@ -181,7 +185,7 @@
     justify-content:space-between;
 }
 .heb-panelswhite-card{
-    flex-basis:30%;
+    flex-basis:31%;
     height: 140px;
     margin-bottom: 20px;
     background-color: white;
@@ -210,7 +214,406 @@
             font-size: 9px;
         }
     }
+    &:hover{
+        transform: scale(1.05);
+        transition: transform 400ms;
+    }
 }
 .star-grey{
-    color:$grey;
+    color:rgb(179, 179, 179);
 }
+
+//POPULAIRES
+.populaire{
+    background-color: $grey;
+    border-radius: 20px;
+    padding:30px 30px 0 30px;
+    flex-basis:calc(33% - 10px);
+    &-title{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        padding-bottom: 20px;
+        &__text{
+        font-size: $titre;
+        margin:0;
+        }
+    }
+}
+.populaire-panelswhite{
+    display: flex;
+    flex-direction: column;
+}
+.pop-panelswhite-card{
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgb(224, 224, 224);
+    padding: 4px;
+    height:105px;
+    &__link{
+        display: flex;
+        height: 100%;
+    }
+    &-picture{
+        border-radius: 10px 0 0 10px;
+        overflow: hidden;
+        width:40%;
+        &__img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &-description{
+        &__title, &__subtitle{
+            font-size: 10px;
+            margin:0;
+            padding: 5px 0 0 8px;
+        }
+        &__star{
+            color: $blue;
+            padding: 40px 0 0 8px;
+            font-size: 9px;
+        }
+    }
+    &:hover{
+        transform: scale(1.05);
+        transition: transform 400ms;
+    }
+}
+
+//ACTIVITES
+#activites{
+    padding-top:30px;
+}
+.activites{
+    &-title{
+        font-size: $titre;
+        margin:0;
+        padding-bottom:10px;
+    }
+    &-cards{
+        padding-top: 15px;
+        height:370px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    &-cards-panel{
+        border-radius: 20px;
+        width:calc(25% - 15px);
+        object-fit: cover;
+        box-shadow: 1px 1px 10px rgb(224, 224, 224);
+        &__title{
+            font-size: $normal;
+            margin:0;
+            padding: 17px 0 0 15px;
+        }
+        &:hover{
+            transform: scale(1.05);
+            transition: transform 400ms;
+        }
+    }
+    &-cards-panel-pictures{
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
+        height: calc(100% - 45px);
+        &__img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.activites-cards-panel{
+    &:nth-child(1){
+    height:100%;
+    }
+    &:nth-child(2){
+    height: calc(60% - 20px);
+    }
+    &:nth-child(3){
+    height: 40%;
+    }
+    &:nth-child(4){
+    height:100%;
+    }
+    &:nth-child(5){
+    height: calc(50% - 20px);
+    }
+    &:nth-child(6){
+    height: 50%;
+    }
+}
+
+//FOOTER
+.footer-panels{
+    max-width: 992px;
+    margin:auto;
+    display: flex;
+    margin-top:30px;
+    padding: 30px 0 30px 0;
+    justify-content: space-between;
+}
+.footer-panel{
+    width: 30%;
+    &__title{
+        margin:0;
+        font-size: $titre;
+        padding-bottom: 15px;
+    }
+    &__link{
+        font-size: $normal;
+        display: block;
+        padding-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    // PARTIE HEADER 
+    #header{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .header{
+        &-logo{
+            width: 120px;
+            padding: 20px 0;
+        }
+        &-nav{
+            width: 100%;
+        }
+        &-nav-list{
+            &-page__link{
+                font-size:$normal-m;
+                padding: 15px 48px;
+                border-top: none;
+                border-bottom: 3px solid $grey; 
+                &:hover{
+                    border-top:none;
+                    border-bottom: 3px solid #0065FC;
+                    color: #0065FC;
+                    transition-duration: .5s;
+                }
+            }
+        }
+    }
+
+    //PARTIE RECHERCHE D'ETABLISSEMENTS
+    .baseline{
+        padding:20px;
+        &_title{
+            font-size: $titre-m;
+        }
+        &_subtitle{
+            font-size: $normal-m;
+        }
+    }
+    .formulaire{
+        padding:0 20px;
+        &-button{
+            font-size: $gras-m;
+            height: 60px;
+            width:60px;
+            border:none; 
+            background-color: $grey;
+            border-radius:10px 0 0 10px;
+            padding:0;
+        }
+        &-ville{
+            height: 60px;
+            border:none;
+            border: 1px solid $grey; 
+            &[type=text]{
+                font-size: $normal-m;
+                padding: 10px;
+                font-weight: 600;
+            }
+        }
+        &-rechercher{
+            display: none;
+        }
+        &-loupe{
+            display: block;
+            height: 60px;
+            width:60px;
+            background-color: $blue;
+            border: none;
+            border-radius:20px;
+            font-size: $gras-m;
+            color:white;
+            }
+        }
+        .filtres{
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items :start;
+            padding:20px;
+            &-title{
+                font-size: $gras-m;
+            }
+            &-list{
+                flex-wrap: wrap;
+                &-panel{
+                    margin-left:0px;
+                    margin-right:15px;
+                    margin-bottom: 10px;
+                }
+            }
+            &-list-panel-button{
+                &__blue{
+                    height:46px;
+                    width:46px;
+                }
+                &__text{
+                    padding:12px 12px 12px 55px;
+                    font-size: 16px;
+                }
+        }
+        .fa-money-bill-wave, .fa-dog, .fa-heart, .fa-child{
+            padding-top: 14px;
+        }
+    }
+
+    //POINT INFO
+    .info{
+        align-items: start;
+        margin:0 20px 20px 20px;
+        &-ring{
+            margin-top: 10px;
+        }
+        &-sentence{
+            font-size: 16px;
+        }
+    }
+    
+    .panelsgrey{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+    }
+
+    //POPULAIRES
+    .populaire{
+        background-color: $grey;
+        border-radius: 0px;
+        padding:20px;
+        &-title{
+            &__text{
+            font-size: $titre-m;
+            margin:0;
+            }
+        }
+    }
+    .fa-chart-line{
+        font-size: $titre-m;
+    }
+    .pop-panelswhite-card{
+        margin-bottom: 10px;
+        height:120px;
+        &-picture{
+            border-radius: 10px 0 0 10px;
+            overflow: hidden;
+            width:35%;
+        }
+        &-description{
+            &__title, &__subtitle{
+                font-size: 17px;
+                padding: 5px 0 0 12px;
+            }
+            &__star{
+                padding: 25px 0 0 12px;
+                font-size: 10px;
+            }
+        }
+    }
+
+    //HEBERGEMENT
+    .hebergement{
+        padding:40px 20px 20px 20px;
+        background-color: white;
+        &-title{
+            font-size: $titre-m;
+        }
+        &-more__text{
+            font-size: $gras-m;
+        }
+    }
+    .hebergement-panelswhite{
+        flex-direction: column;
+    }
+    .heb-panelswhite-card{
+        height: 110px;
+        padding: 4px;
+        &-picture{
+            &__img{
+                height: 110px;
+            }
+        }
+        &-description{
+            &__title, &__subtitle{
+                font-size: 16px;
+                padding: 4px 0 0 8px;
+            }
+            &__star{
+                padding: 4px 0 0 8px;
+                font-size: 10px;
+            }
+        }
+    }
+
+    //ACTIVITES
+    #activites{
+        padding: 20px;
+    }
+    .activites{
+            &-title{
+                margin-top: 20px;
+                font-size: $titre-m;
+            }
+            &-cards{
+                height:auto;
+            }
+            &-cards-panel{
+                width:100%;
+                margin-bottom: 20px;
+                &__title{
+                    font-size: 16px;
+                    padding: 17px 0 0 15px;
+                }
+            }
+            &-cards-panel-pictures{
+                height: calc(100% - 50px);
+            }
+    }
+    .activites-cards-panel{
+        &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6){
+        height:190px;
+        }
+    }
+
+    //FOOTER
+    .footer-panels{
+        margin-top:0px;
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    .footer-panel{
+        width: 100%;
+        padding-bottom: 20px;
+        &__title{
+            font-size: $titre-m;
+            padding-bottom: 20px;
+        }
+        &__link{
+            font-size: $normal-m;
+            padding-bottom: 15px;
+        }
+    }
+}
+
