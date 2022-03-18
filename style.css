@@ -46,6 +46,7 @@
   height: 40px;
   border: none;
   border: 1px solid #F2F2F2;
+  font-weight: 600;
 }
 .formulaire-ville[type=text] {
   font-size: 12px;
