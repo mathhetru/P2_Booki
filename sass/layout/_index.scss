@@ -384,8 +384,8 @@
 }
 
 
-@media screen and (max-width: 768px) {
-    // PARTIE HEADER 
+@media screen and (max-width: 991px) {
+    // PARTIE HEADER TAB
     #header{
         flex-direction: column;
     }
@@ -415,9 +415,10 @@
         }
     }
 
-    //PARTIE RECHERCHE D'ETABLISSEMENTS
+    //PARTIE RECHERCHE D'ETABLISSEMENTS TAB
     .baseline{
         padding:20px;
+        text-align: center;
         &_title{
             font-size: $titre-m;
         }
@@ -427,7 +428,7 @@
     }
     .formulaire{
         padding:0 20px;
-
+        justify-content: center;
         &-button{
             font-size: $gras-m;
             height: 50px;
@@ -460,41 +461,45 @@
             font-size: $gras-m;
             color:white;
             }
+    }
+
+    //PARTIE FILTRES TAB
+    .filtres{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items : center;
+        padding:20px;
+        &-title{
+            font-size: $gras-m;
         }
-        .filtres{
-            flex-direction: column;
+        &-list{
             flex-wrap: wrap;
-            align-items :start;
-            padding:20px;
-            &-title{
-                font-size: $gras-m;
+            justify-content: center;
+            &-panel{
+                margin-left:0px;
+                margin-right:15px;
+                margin-bottom: 10px;
             }
-            &-list{
-                flex-wrap: wrap;
-                &-panel{
-                    margin-left:0px;
-                    margin-right:15px;
-                    margin-bottom: 10px;
-                }
+        }
+        &-list-panel-button{
+            &__blue{
+                height:46px;
+                width:46px;
             }
-            &-list-panel-button{
-                &__blue{
-                    height:46px;
-                    width:46px;
-                }
-                &__text{
-                    padding:12px 12px 12px 55px;
-                    font-size: 16px;
-                }
+            &__text{
+                padding:12px 12px 12px 55px;
+                font-size: 16px;
+            }
         }
         .fa-money-bill-wave, .fa-dog, .fa-heart, .fa-child{
             padding-top: 14px;
         }
     }
 
-    //POINT INFO
+    //POINT INFO TAB
     .info{
         align-items: start;
+        justify-content: center;
         margin:0 20px 20px 20px;
         &-ring{
             margin-top: 10px;
@@ -510,7 +515,7 @@
             justify-content: space-between;
     }
 
-    //POPULAIRES
+    //POPULAIRES TAB
     .populaire{
         background-color: $grey;
         border-radius: 0px;
@@ -545,7 +550,7 @@
         }
     }
 
-    //HEBERGEMENT
+    //HEBERGEMENT TAB
     .hebergement{
         padding:40px 20px 20px 20px;
         background-color: white;
@@ -564,7 +569,7 @@
         padding: 4px;
         &-picture{
             &__img{
-                height: 110px;
+                height: 180px;
             }
         }
         &-description{
@@ -579,7 +584,7 @@
         }
     }
 
-    //ACTIVITES
+    //ACTIVITES TAB
     #activites{
         padding: 20px;
     }
@@ -609,7 +614,7 @@
         }
     }
 
-    //FOOTER
+    //FOOTER TAB
     .footer-panels{
         margin-top:0px;
         flex-direction: column;
@@ -629,3 +634,34 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    //PARTIE RECHERCHE D'ETABLISSEMENTS MOBILE
+    .formulaire{
+        justify-content: start;
+    }
+    .baseline{
+        text-align:start;
+    }
+
+    //PARTIE FILTRES MOBILE
+    .filtres{
+        align-items : start;
+        &-list{
+            justify-content: start;
+        }
+    }
+
+    //POINT INFO TAB
+    .info{
+        justify-content: start;
+    }
+    
+    //HEBERGEMENT MOBILE
+    .heb-panelswhite-card{
+        &-picture{
+            &__img{
+                height: 110px;
+            }
+        }
+    }
+}
