@@ -8,12 +8,18 @@
   width: 80px;
 }
 .header-nav-list {
+  width: 300px;
   display: flex;
+  justify-content: right;
+}
+.header-nav-list-page {
+  flex: 1;
+  text-align: center;
 }
 .header-nav-list-page__link {
   font-size: 12px;
   display: block;
-  padding: 40px;
+  padding-top: 40px;
   border-top: 2px solid #FFF;
 }
 .header-nav-list-page__link:hover {
@@ -52,6 +58,9 @@
   font-size: 12px;
   padding: 10px;
   font-weight: 600;
+}
+.formulaire-ville ::placeholder, .formulaire-ville ::-webkit-input-placeholder, .formulaire-ville ::-moz-placeholder {
+  color: blue !important;
 }
 .formulaire-rechercher {
   font-size: 12px;
@@ -282,7 +291,7 @@
 }
 
 #activites {
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 .activites-title {
@@ -371,7 +380,6 @@
 @media screen and (max-width: 768px) {
   #header {
     flex-direction: column;
-    flex-wrap: wrap;
   }
 
   .header-logo {
@@ -381,11 +389,15 @@
   .header-nav {
     width: 100%;
   }
+  .header-nav-list {
+    width: 100%;
+  }
   .header-nav-list-page__link {
     font-size: 18px;
-    padding: 15px 48px;
     border-top: none;
     border-bottom: 3px solid #F2F2F2;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
   .header-nav-list-page__link:hover {
     border-top: none;
@@ -409,20 +421,20 @@
   }
   .formulaire-button {
     font-size: 21px;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border: none;
     background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
     padding: 0;
   }
   .formulaire-ville {
-    height: 60px;
+    height: 50px;
     border: none;
     border: 1px solid #F2F2F2;
   }
   .formulaire-ville[type=text] {
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px;
     font-weight: 600;
   }
@@ -431,8 +443,8 @@
   }
   .formulaire-loupe {
     display: block;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     background-color: #0065FC;
     border: none;
     border-radius: 20px;

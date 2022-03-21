@@ -9,11 +9,17 @@
     width:80px;
     }
     &-nav-list{
+        width:300px;
         display:flex;
+        justify-content: right;
+        &-page{
+            flex: 1;
+            text-align: center;
+        }
         &-page__link{
             font-size:$normal;
             display: block;
-            padding:40px;
+            padding-top:40px;
             border-top: 2px solid #FFF; 
             &:hover{
                 border-top: 2px solid #0065FC;
@@ -54,6 +60,9 @@
             font-size: $normal;
             padding: 10px;
             font-weight: 600;
+        }
+        ::placeholder, ::-webkit-input-placeholder, ::-moz-placeholder {
+            color: blue !important;
         }
     }
     &-rechercher{
@@ -286,7 +295,7 @@
 
 //ACTIVITES
 #activites{
-    padding-top:30px;
+    padding-top:40px;
 }
 .activites{
     &-title{
@@ -379,22 +388,23 @@
     // PARTIE HEADER 
     #header{
         flex-direction: column;
-        flex-wrap: wrap;
     }
     .header{
         &-logo{
             width: 120px;
             padding: 20px 0;
         }
-        &-nav{
+        &-nav{ 
             width: 100%;
         }
         &-nav-list{
+            width:100%;
             &-page__link{
                 font-size:$normal-m;
-                padding: 15px 48px;
                 border-top: none;
-                border-bottom: 3px solid $grey; 
+                border-bottom: 3px solid $grey;
+                padding-top:10px;
+                padding-bottom: 20px;
                 &:hover{
                     border-top:none;
                     border-bottom: 3px solid #0065FC;
@@ -417,21 +427,22 @@
     }
     .formulaire{
         padding:0 20px;
+
         &-button{
             font-size: $gras-m;
-            height: 60px;
-            width:60px;
+            height: 50px;
+            width:50px;
             border:none; 
             background-color: $grey;
             border-radius:10px 0 0 10px;
             padding:0;
         }
         &-ville{
-            height: 60px;
+            height: 50px;
             border:none;
             border: 1px solid $grey; 
             &[type=text]{
-                font-size: $normal-m;
+                font-size: 16px;
                 padding: 10px;
                 font-weight: 600;
             }
@@ -441,8 +452,8 @@
         }
         &-loupe{
             display: block;
-            height: 60px;
-            width:60px;
+            height: 50px;
+            width:50px;
             background-color: $blue;
             border: none;
             border-radius:20px;
