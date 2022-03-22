@@ -94,9 +94,6 @@ body {
   padding: 10px;
   font-weight: 600;
 }
-.formulaire-ville ::placeholder, .formulaire-ville ::-webkit-input-placeholder, .formulaire-ville ::-moz-placeholder {
-  color: blue !important;
-}
 .formulaire-rechercher {
   font-size: 12px;
   border: none;
