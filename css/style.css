@@ -1,3 +1,37 @@
+/* ELEMENTS PRINCIPAUX */
+
+* {
+  box-sizing: border-box;
+}
+* a {
+  text-decoration: none;
+  color: black;
+}
+* ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+* button, * input {
+  cursor: pointer;
+  text-decoration: none;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  max-width: 100%;
+  margin: auto;
+}
+#header, #main {
+  max-width: 992px;
+  margin: auto;
+}
+#footer {
+  background-color: #F2F2F2;
+}
+
+
+/* PARTIE HEADER DESKTOP */
 #header {
   display: flex;
   justify-content: space-between;
@@ -28,6 +62,7 @@
   transition-duration: 0.5s;
 }
 
+/* PARTIE RECHERCHE D'ETABLISSEMENTS DESKTOP */
 .baseline_title {
   font-size: 17px;
 }
@@ -84,6 +119,7 @@
   font-size: 15px;
 }
 
+/* FILTRES DESKTOP */
 .filtres {
   display: flex;
   justify-content: start;
@@ -143,6 +179,7 @@
   padding-top: 12px;
 }
 
+/* POINT INFO DESKTOP */
 .info {
   display: flex;
   align-items: center;
@@ -166,6 +203,7 @@
   font-size: 10px;
 }
 
+/* HEBERGEMENT DESKTOP */
 .panelsgrey {
   display: flex;
   justify-content: space-between;
@@ -231,6 +269,7 @@
   color: #b3b3b3;
 }
 
+/* PARTIE POPULAIRE DESKTOP */
 .populaire {
   background-color: #F2F2F2;
   border-radius: 20px;
@@ -290,6 +329,7 @@
   transition: transform 400ms;
 }
 
+/* PARTIE ACTIVITES DESKTOP */
 #activites {
   padding-top: 40px;
 }
@@ -354,6 +394,7 @@
   height: 50%;
 }
 
+/* PARTIE FOOTER DESKTOP */
 .footer-panels {
   max-width: 992px;
   margin: auto;
@@ -377,7 +418,13 @@
   padding-bottom: 10px;
 }
 
+
+
+
+/* BREAKPOINT TABLETTE ! */
+
 @media screen and (max-width: 991px) {
+  /* PARTIE HEADER TAB */
   #header {
     flex-direction: column;
   }
@@ -406,6 +453,7 @@
     transition-duration: 0.5s;
   }
 
+  /* PARTIE RECHERCHE D'ETABLISSEMENTS TAB */
   .baseline {
     padding: 20px;
     text-align: center;
@@ -454,6 +502,7 @@
     color: white;
   }
 
+  /* PARTIE FILTRES TAB */
   .filtres {
     flex-direction: column;
     flex-wrap: wrap;
@@ -484,6 +533,7 @@
     padding-top: 14px;
   }
 
+  /* POINT INFO TAB */
   .info {
     align-items: start;
     justify-content: center;
@@ -496,6 +546,7 @@
     font-size: 16px;
   }
 
+  /* PARTIE POPULAIRES TAB */
   .panelsgrey {
     display: flex;
     flex-direction: column-reverse;
@@ -534,6 +585,7 @@
     font-size: 10px;
   }
 
+  /* PARTIE HEBERGEMENT TAB */
   .hebergement {
     padding: 40px 20px 20px 20px;
     background-color: white;
@@ -565,6 +617,7 @@
     font-size: 10px;
   }
 
+  /* PARTIE ACTIVITES TAB */
   #activites {
     padding: 20px;
   }
@@ -587,11 +640,15 @@
   .activites-cards-panel-pictures {
     height: calc(100% - 50px);
   }
-
-  .activites-cards-panel:nth-child(1), .activites-cards-panel:nth-child(2), .activites-cards-panel:nth-child(3), .activites-cards-panel:nth-child(4), .activites-cards-panel:nth-child(5), .activites-cards-panel:nth-child(6) {
-    height: 190px;
+  .activites-cards-panel-pictures__img {
+    height: 200px;
   }
 
+  .activites-cards-panel:nth-child(1), .activites-cards-panel:nth-child(2), .activites-cards-panel:nth-child(3), .activites-cards-panel:nth-child(4), .activites-cards-panel:nth-child(5), .activites-cards-panel:nth-child(6) {
+    height: 250px;
+  }
+
+  /* PARTIE FOOTER TAB */
   .footer-panels {
     margin-top: 0px;
     flex-direction: column;
@@ -611,64 +668,36 @@
     padding-bottom: 15px;
   }
 }
+
+
+
+
+/* BREAKPOINT MOBILE ! */
 @media screen and (max-width: 767px) {
+  /* remise du fer à gauche pour le formulaire, la baseline, les filtres et le point info */
   .formulaire {
     justify-content: start;
   }
-
   .baseline {
     text-align: start;
   }
-
   .filtres {
     align-items: start;
   }
   .filtres-list {
     justify-content: start;
   }
-
   .info {
     justify-content: start;
   }
 
+  /* diminution de la hauteur pour les images de "hebergement" */
   .heb-panelswhite-card-picture__img {
     height: 110px;
   }
-}
-body {
-  font-family: "Raleway", sans-serif;
-  color: black;
-  max-width: 100%;
-  margin: auto;
-}
 
-* {
-  box-sizing: border-box;
+  /* diminution de la hauteur pour les images de "activités" */
+  .activites-cards-panel:nth-child(1), .activites-cards-panel:nth-child(2), .activites-cards-panel:nth-child(3), .activites-cards-panel:nth-child(4), .activites-cards-panel:nth-child(5), .activites-cards-panel:nth-child(6) {
+    height: 190px;
+  }
 }
-
-* a {
-  text-decoration: none;
-  color: black;
-}
-
-* ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-* button, * input {
-  cursor: pointer;
-  text-decoration: none;
-}
-
-#header, #main {
-  max-width: 992px;
-  margin: auto;
-}
-
-#footer {
-  background-color: #F2F2F2;
-}
-
-/*# sourceMappingURL=style.css.map */
