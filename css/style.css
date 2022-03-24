@@ -14,7 +14,6 @@
 }
 * button, * input {
   cursor: pointer;
-  text-decoration: none;
 }
 body {
   font-family: "Raleway", sans-serif;
@@ -25,7 +24,6 @@ body {
 #header, #main {
   max-width: 992px;
   margin: auto;
-  padding: 10px;
 }
 #footer {
   background-color: #F2F2F2;
@@ -398,7 +396,7 @@ body {
   margin: auto;
   display: flex;
   margin-top: 30px;
-  padding: 10px;
+  padding-top: 10px;
   justify-content: space-between;
 }
 
@@ -425,9 +423,6 @@ body {
   /* PARTIE HEADER TAB */
   #header {
     flex-direction: column;
-  }
-  #header, #main {
-    padding: 0;
   }
 
   .header-logo {
@@ -675,10 +670,6 @@ body {
 
 /* BREAKPOINT MOBILE ! */
 @media screen and (max-width: 767px) {
-  #header, #main {
-    padding: 0;
-  }
-
   /* remise du fer à gauche pour le formulaire, la baseline, les filtres et le point info */
   .formulaire {
     justify-content: start;
